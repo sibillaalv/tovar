@@ -1,0 +1,112 @@
+
+@import url("https://fonts.google.com/specimen/Rubik?query=rubik");
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: black;
+    font-family: "Rubic", sans-serif;
+    font-weight: 600;
+
+}
+.cards {
+    display: flex;
+    justify-content: center;
+    gap: 10%;
+
+}
+
+.whiteCard,  .yellowCard {
+   position: relative;
+   margin-top: 100px;
+   width: 350px;
+   height: 434px;
+   border-radius: 5%;
+   display: flex;
+   flex-direction: column;
+   gap: 3%;
+
+
+
+}
+.yellowCard {
+background-color: rgba(255, 209, 0, 1);
+}
+
+.whiteCard {
+    background-color: rgba(255, 255, 255, 1);
+}
+
+.text {
+    display: flex;
+    flex-direction: column;
+    padding-left: 30px;
+    gap: 20px;
+}
+
+.text :nth-child(1) {
+    text-transform: capitalize;
+    font-size: 24px;
+    line-height: 28.8px;
+}
+
+.text :nth-child(2) {
+    font-size: 14px;
+    color: rgba(128, 128, 128, 1);
+    font-weight: 300;
+}
+
+.prices {
+    padding-top: 50px;
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+    padding-right: 30px;
+
+}
+
+.prices :nth-child(1) {
+    font-size: 18px;
+    color:rgba(128, 128, 128, 1);
+    line-height: 21.6px;
+    text-decoration: line-through;
+}
+
+.prices :nth-child(2) {
+    font-size: 43px;
+    color:rgba(148, 27, 12, 1);
+    line-height: 51.6px;
+
+}
+
+.basket {
+    position: absolute;
+    background-color: black;
+    bottom: 0;
+    width: 75px;
+    height: 75px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.vector {
+    background-image: url(./img/Vector.svg);
+    background-repeat: no-repeat;
+    position: absolute;
+    width: 86px;
+    height: 86px;
+    top: -20px;
+    left: -25px;
+}
+
+.vector>p {
+    position: absolute;
+    color: white;
+    font-size: 26px;
+    transform: rotate(-45deg);
+    left: 15px;
+    top: 28px;
+
+}
